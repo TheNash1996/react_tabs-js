@@ -2,8 +2,7 @@ import React from 'react';
 
 export const Tabs = ({ tabs, activeTabId, onTabSelected }) => {
   // If activeTabId is invalid, fall back to the first tab
-  const activeTab =
-    tabs.find(tab => tab.id === activeTabId) || tabs[0];
+  const activeTab = tabs.find(tab => tab.id === activeTabId) || tabs[0];
 
   return (
     <div data-cy="TabsComponent">
